@@ -1,0 +1,23 @@
+# Actuator configuration
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: always
+
+# H2 configuration
+spring:
+  datasource:
+    url:
+    driverClass: org.h2.Driver
+    username: sa
+    password: 123
+  h2:
+    console:
+      enabled: true
+      path: /inmemdb 
+      settings:
+        web-allow-others: true
