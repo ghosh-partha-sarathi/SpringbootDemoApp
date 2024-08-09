@@ -1,0 +1,1 @@
+INSERT INTO customers(id, name, email, accountId) VALUES ('1001', 'Partha', 'partha123@test.com', '1123581321');

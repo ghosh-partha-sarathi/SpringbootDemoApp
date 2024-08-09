@@ -1,6 +1,6 @@
-package com.mailer.app.services;
+package com.example.demo.service;
 
-import com.mailer.app.config.MailConfig;
+import com.example.demo.config.MailConfig;
 
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;

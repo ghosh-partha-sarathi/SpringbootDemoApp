@@ -1,4 +1,4 @@
-package com.mailer.app.config;
+package com.example.demo.config;
 
 import java.util.Properties;
 

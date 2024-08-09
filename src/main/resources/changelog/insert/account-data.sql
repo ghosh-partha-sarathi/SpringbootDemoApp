@@ -1,0 +1,1 @@
+INSERT INTO accounts(accountId, balance) VALUES ('1123581321', 100000);

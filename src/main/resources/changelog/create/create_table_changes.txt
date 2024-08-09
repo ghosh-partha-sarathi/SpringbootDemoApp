@@ -1,0 +1,7 @@
+CREATE TABLE bankdb.customers_seq (
+  next_val bigint NOT NULL AUTO_INCREMENT,
+  PRIMARY KEY (next_val)
+)
+
+SELECT * FROM customers_seq;
+INSERT INTO customers_seq (next_val) VALUES (0);

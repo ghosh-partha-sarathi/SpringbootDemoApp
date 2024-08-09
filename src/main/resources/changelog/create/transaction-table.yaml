@@ -1,0 +1,51 @@
+databaseChangeLog:
+  - preConditions:
+      - runningAs:
+          username: root
+  - changeSet:
+      id:  3
+      author: Partha
+      labels: example-label
+      context: example-context
+      comment: example-comment
+      changes:
+        - createTable:
+            tableName: transactions
+            columns:
+              - column:
+                  name:  id
+                  type:  int
+                  autoIncrement:  true
+                  constraints:
+                    primaryKey:  true
+                    nullable:  false
+              - column:
+                  name:  account_id
+                  type:  varchar(50)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: txn_type
+                  type: varchar(10)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: txn_party
+                  type: varchar(50)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: txn_mode
+                  type: varchar(10)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: amount
+                  type: double
+                  defaultValue: 0
+              - column:
+                  name: txn_timestamp
+                  type: timestamp
+                  defaultValueComputed: now()
+                  constraints:
+                    nullable: false
